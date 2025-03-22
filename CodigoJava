@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class Multiplicação {
+    public static void main(String[] args) {
+        Scanner Projeto = new Scanner(System.in);
+
+        int numeroN= 6;
+
+        System.out.println("Digite um numero superior: ");
+        int numeroSuperior= Projeto.nextInt();
+
+        System.out.println("Digite um numero inferior: ");
+        int numeroInferior= Projeto.nextInt();
+        if ((numeroN >= numeroInferior && numeroN <= numeroSuperior) || (numeroN >= numeroSuperior && numeroN <= numeroInferior)) {
+            System.out.println("O número " + numeroN + " está dentro do intervalo.");
+        } else {
+            System.out.println("O número " + numeroN + " está fora do intervalo.");
+        }
+        
+    }
+}
